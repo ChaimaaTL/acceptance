@@ -18,11 +18,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+   implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    implementation de test 'io.cucumber:cucumber-java:7.14.1'
-    implementation de test 'io.cucumber:cucumber-junit:7.14.1'
+    testImplementation 'io.cucumber:cucumber-java:7.14.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.14.1'
 }
 
 tasks.named('test') {
@@ -59,3 +59,4 @@ tasks.register('acceptanceTest', Test) {
 test {
     exclude '**/acceptance/**'
 }
+
